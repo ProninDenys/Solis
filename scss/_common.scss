@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+  &,
+  &::after,
+  &::before {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+
+body {
+  @include background-image('../assets/bg-body.webp', top, contain);
+}
+
+
+a,
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+button {
+  border: none;
+  background: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+li {
+  list-style: none;
+}
+
+i {
+  color: $color-green;
+}
+
